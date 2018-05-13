@@ -64,7 +64,7 @@
 	</style>
 </head>
 <body>
-<form action="action.php" style="border:1px solid #ccc">
+<form action="action.php" method="post" style="border:1px solid #ccc">
 	<div class="container">
 		<h1>Log In</h1>
 		<p>Please fill in this form to login.</p>
@@ -77,7 +77,7 @@
 		<input type="password" placeholder="Enter Password" name="psw" required>
 
 		<div class="clearfix">
-			<button type="submit" class="loginbtn">Log In</button>
+			<button name="log_in" type="submit" class="loginbtn">Log In</button>
 		</div>
 		<div class="container signin">
 			<p>Already no account? <a href="signup.php">Sign up</a>.</p>
