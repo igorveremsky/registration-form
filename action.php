@@ -16,10 +16,10 @@ $password = $_POST['psw'];
 /* Подключение к базе данных MySQL с помощью вызова драйвера */
 $dsn      = 'mysql:dbname=form_db;host=127.0.0.1';
 $user     = 'root';
-$password = '';
+$password_db = '';
 
 try {
-	$dbh = new PDO( $dsn, $user, $password );
+	$dbh = new PDO( $dsn, $user, $password_db );
 } catch ( PDOException $e ) {
 	echo 'Подключение не удалось: ' . $e->getMessage();
 }
