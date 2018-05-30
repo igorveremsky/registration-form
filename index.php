@@ -74,7 +74,7 @@
 		<input type="text" placeholder="Enter Login" name="login" required>
 
 		<label for="psw"><b>Password</b></label>
-		<input type="password" placeholder="Enter Password" name="psw" required>
+		<input type="password" pattern=".{8,}" title="At least 8 symbols required" placeholder="Enter Password" name="psw" required>
 
 		<div class="clearfix">
 			<button name="log_in" type="submit" class="loginbtn">Log In</button>
